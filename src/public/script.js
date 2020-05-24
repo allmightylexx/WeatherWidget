@@ -1,0 +1,28 @@
+const buttons = document.querySelectorAll("button");
+// /api/:index/"
+function getData(index) {
+  fetch(`/api/${index}/`)
+    .then(e => e.json())
+    .then(data => {
+      console.log(data);
+      const img = document.querySelector("img");
+      const city = document.querySelector("h3");
+      const cityTemp = document.querySelector("p");
+
+      img.src = data.img;
+      city.innerHTML - data.temp;
+      cityTemp.innerHTML = data.temp;
+    });
+}
+
+buttons[0].addEventListener("click", () => {
+  getData(0);
+});
+
+buttons[0].addEventListener("click", () => {
+  getData(1);
+});
+
+buttons[0].addEventListener("click", () => {
+  getData(2);
+});

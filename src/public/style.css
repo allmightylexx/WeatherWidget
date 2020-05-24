@@ -1,0 +1,15 @@
+main {
+  padding: 30px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+img {
+  display: block;
+  width: 60px;
+  height: 50px;
+  background-color: ;
+}
